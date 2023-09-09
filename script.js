@@ -6,14 +6,7 @@ function changing() {
   const UTCSeconds = date.getUTCSeconds()
   const UTCmilliseconds = date.getUTCMilliseconds()
   time.innerText =
-    'UTC Time:' +
-    UTCHours +
-    ':' +
-    UTCMinutes +
-    ':' +
-    UTCSeconds +
-    ':' +
-    UTCmilliseconds
+    UTCHours + ':' + UTCMinutes + ':' + UTCSeconds + ':' + UTCmilliseconds
 }
 changing()
 setInterval(changing, 1)
