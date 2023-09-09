@@ -20,12 +20,6 @@ body {
   color: white;
 }
 
-.image {
-  width: fit-content;
-  border-radius: 100%;
-  text-align: center;
-  margin: 0 auto;
-}
 img {
   height: 200px;
   width: 200px;
@@ -38,18 +32,8 @@ p {
   margin-left: 0;
   font-size: 1.5rem;
 }
-.btn {
-  position: fixed;
-  right: 20%;
-  bottom: 20%;
-  background-color: blue;
-  color: white;
-  padding: 5px;
-  border: none;
-  outline: none;
-}
+
 a {
-  text-decoration: none;
   font-size: 1.3rem;
-  color: white;
+  color: blue;
 }
