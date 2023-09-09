@@ -1,13 +1,25 @@
 function changing() {
-  const day = Date.now()
+  const date = new Date()
   const time = document.getElementById('time')
-  time.innerText = day
+  const UTCHours = date.getUTCHours() + 1
+  const UTCMinutes = date.getUTCMinutes()
+  const UTCSeconds = date.getUTCSeconds()
+  const UTCmilliseconds = date.getUTCMilliseconds()
+  time.innerText =
+    'UTC Time:' +
+    UTCHours +
+    ':' +
+    UTCMinutes +
+    ':' +
+    UTCSeconds +
+    ':' +
+    UTCmilliseconds
 }
 changing()
 setInterval(changing, 1)
-const date = new Date()
-const today = date.getDay()
-console.log(today)
+// ......... Show Day-------------------------
+const day = document.getElementById('day')
+const today = new Date().getDay()
 const arr = [
   'Sunday',
   'Monday',
@@ -18,5 +30,4 @@ const arr = [
   'Saturday',
 ]
 
-const day = document.getElementById('day')
 day.innerText = arr[today]
