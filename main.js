@@ -9,7 +9,7 @@ function changing() {
     UTCHours + ':' + UTCMinutes + ':' + UTCSeconds + ':' + UTCmilliseconds
 }
 changing()
-setInterval(changing, 1)
+setInterval(changing, 3000)
 // ......... Show Day-------------------------
 const day = document.getElementById('day')
 const today = new Date().getDay()
