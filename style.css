@@ -63,11 +63,17 @@ a {
 a:hover {
   color: #23527c;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 960px) {
   .container {
     width: 100%;
     display: flex;
     gap: 5%;
     align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0%;
+    text-align: center;
   }
 }
