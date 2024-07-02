@@ -15,7 +15,7 @@ body {
 .container {
   padding: 1rem;
   width: 100%;
-  max-width: 500px;
+  max-width: 1400px;
 }
 
 .image {
@@ -26,38 +26,24 @@ h1 {
   text-align: center;
   font-size: 2.5rem;
 }
-#title {
-  color: red;
-}
+
 span {
   color: #337ab7;
 }
-
-main {
-  margin-top: 1rem;
-}
-.heading h2 {
+h2 {
   color: blue;
   margin-bottom: 5px;
+}
+main {
+  margin-top: 1rem;
 }
 
 .contact {
   margin-top: 1rem;
 }
-.contact h2 {
-  color: blue;
-  margin-bottom: 5px;
-}
+
 .links {
   margin-top: 1rem;
-}
-.links h2 {
-  color: blue;
-  margin-bottom: 5px;
-}
-
-h2 {
-  color: blue;
 }
 
 ul {
@@ -76,4 +62,12 @@ a {
 
 a:hover {
   color: #23527c;
+}
+@media screen and (min-width: 500px) {
+  .container {
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+  }
 }
