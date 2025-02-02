@@ -1,79 +1,73 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
-  font-family: Arial, sans-serif;
-  margin: 0 auto;
-  width: 100%;
+  font-family: sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: left;
-}
-.container {
-  padding: 1rem;
-  width: 100%;
-  max-width: 1400px;
+  min-height: 90vh;
+  background-color: #f0f0f0;
+  padding-top: 10px;
 }
 
-.image {
-  margin: 0.5rem 0px;
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 350px; /* Adjust as needed */
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover; /* Maintain aspect ratio */
+  margin: 0 auto 15px; /* Center the image */
+  display: block;
+}
+
+.info {
   text-align: center;
 }
-h1 {
-  text-align: center;
-  font-size: 2.5rem;
+
+.info h2 {
+  margin-bottom: 3px;
 }
 
-span {
-  color: #337ab7;
-}
-h2 {
-  color: blue;
-  margin-bottom: 5px;
-}
-main {
-  margin-top: 1rem;
-}
-
-.contact {
-  margin-top: 1rem;
-}
-
-.links {
-  margin-top: 1rem;
-}
-
-ul {
-  margin-top: 5px;
-}
-
-ul li {
+.info p {
   margin-bottom: 10px;
-  list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: #337ab7;
+.social-links {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
 }
 
-a:hover {
-  color: #23527c;
+.social-links a {
+  margin: 0 10px;
+  color: #333; /* Example color */
+  text-decoration: none; /* Remove underlines */
+  padding: 8px;
+  font-size: small;
+  background-color: blue;
+  border-radius: 5px;
+  color: white;
 }
-@media screen and (min-width: 960px) {
-  .container {
-    width: 100%;
-    display: flex;
-    gap: 5%;
-    align-items: center;
+
+#current-time {
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Responsive Design - Example */
+@media (max-width: 400px) {
+  .card {
+    width: 90%; /* Make card almost full width on smaller screens */
+    padding: 15px;
   }
-}
-@media screen and (max-width: 500px) {
-  .container {
-    padding: 0%;
-    text-align: center;
+  .profile-image {
+    width: 120px;
+    height: 120px;
   }
 }

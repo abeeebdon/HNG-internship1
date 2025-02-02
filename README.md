@@ -1,21 +1,14 @@
 # HNG-internship1
 
-This is my first assignment on HNG internship
+Stage 0 Task
 
-# Components
+### Question
 
-It has an image of my slack profile
-Name with current day and time
+Create a responsive Profile Card using HTML, CSS, and Vanilla JavaScript.
 
-# Question
+### Acceptance Criteria
 
-Objective: Develop and host a web page using HTML and CSS that showcases specific personal and real-time data attributes. Each required element should have a specified data-testid attribute for easy identification and testing.
-
-# Submission Mode
-
-Submit your task through the designated submission form. Ensure you've:
-
-Hosted the page on a platform of your choice (e.g., Vercel, GitHub Pages, Netlify).
-Double-check all requirements and acceptance criteria.
-Provide your slack display name, email and the hosted page's URL in the submission form.
-Before finalising your submission, thoroughly review your work to ensure accuracy, functionality and adherence to the specified guidelines.
+The profile card must be visually appealing and responsive.
+It should follow a clean UI/UX design approach.
+All required elements must be included with the correct data-testid attributes.
+The UTC time should update dynamically when the page is refreshed.
