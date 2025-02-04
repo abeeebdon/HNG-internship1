@@ -14,7 +14,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 99vh;
+  /* height: 99vh; */
+  padding-top: 20px;
 }
 .game-container {
   height: 94vh;
