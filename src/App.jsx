@@ -79,10 +79,20 @@ const App = () => {
     <div className="container">
       <main className="game-container">
         <div>
-          <h1 data-testid="gameInstructions" className="game-header">
-            Color Game
-          </h1>
-          <p>Guess the Correct Color and win</p>
+          <h1 className="game-header">Color Game</h1>
+          <p data-testid="gameInstructions" className="gameInstructions">
+            Using the color show in the box above, Guess the Correct Color and
+            win
+          </p>
+          <h2
+            data-testid="gameStatus"
+            className="game-status"
+            style={{
+              color: gameStatus == 'Wrong! Try again.' && 'red',
+            }}
+          >
+            {gameStatus}
+          </h2>
         </div>
         <div
           data-testid="colorBox"
@@ -100,10 +110,9 @@ const App = () => {
             ></button>
           ))}
         </div>
-        <div className="scoreboard">
-          <h2 data-testid="gameStatus">{gameStatus}</h2>
-          <p data-testid="score">Score: {score}</p>
-        </div>
+        <p data-testid="score" className="game-score">
+          Score: {score}
+        </p>
         <button
           onClick={startNewGame}
           data-testid="newGameButton"
