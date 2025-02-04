@@ -15,11 +15,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 99vh;
-  padding-top: 20px;
 }
 .game-container {
   width: 90vw;
-  max-width: 350px;
+  max-width: 380px;
   background: white;
   padding: 20px;
   border-radius: 10px;
