@@ -1,14 +1,8 @@
-# HNG-internship1
+# React + Vite
 
-Stage 0 Task
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-### Question
+Currently, two official plugins are available:
 
-Create a responsive Profile Card using HTML, CSS, and Vanilla JavaScript.
-
-### Acceptance Criteria
-
-The profile card must be visually appealing and responsive.
-It should follow a clean UI/UX design approach.
-All required elements must be included with the correct data-testid attributes.
-The UTC time should update dynamically when the page is refreshed.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

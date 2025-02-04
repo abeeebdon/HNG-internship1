@@ -2,57 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/letter-c.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Profile Card</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>COLOR GAME</title>
   </head>
   <body>
-    <div class="card">
-      <img
-        src="./assets/abeeb.jpeg"
-        alt="Your Profile Picture"
-        class="profile-image"
-        data-testid="profilePicture"
-      />
-      <div class="info">
-        <h2 data-testid="fullName">Abeeb Maroof Olumide</h2>
-        <p data-testid="jobTitle">Frontend Developer</p>
-        <p data-testid="shortBio">
-          I am Abeeb Maroof Olumide, a passionate front-end developer with years
-          of experience in creating user-friendly and engaging web experiences.
-          <br />My skills are in HTML, CSS, JavaScript, React JS and React
-          Native, and Next JS. I have excelled in various collaborative
-          environment owing to my great communication and problem solving
-          skills. I am always eager to learn and contribute to innovative
-          projects.
-        </p>
-        <p data-testid="currentLocation">Ibadan, Nigeria</p>
-        <p data-testid="emailAddress">Email Address: abeebdon@gmail.com</p>
-        <div>
-          <p>Contact me @</p>
-          <div class="social-links" data-testid="socialLinks">
-            <a href="https://www.linkedin.com/in/abeebmaroof/" target="_blank"
-              >Linkedin</a
-            >
-            <a href="https://github.com/abeeebdon/" target="_blank">Github</a>
-            <a href="https://x.com/AbeebMaroof" target="_blank">Twitter</a>
-          </div>
-        </div>
-
-        <p id="current-time" data-testid="currentTimeUTC"></p>
-      </div>
-    </div>
-
-    <script>
-      function updateUTCTime() {
-        const now = new Date()
-        const utcTime = now.toUTCString()
-        document.getElementById('current-time').textContent = utcTime
-      }
-
-      setInterval(updateUTCTime, 1000) // Update in a min
-
-      // You can add an interval to update the time periodically if required (e.g., every minute)
-    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
