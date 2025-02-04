@@ -17,7 +17,7 @@ body {
   height: 99vh;
 }
 .game-container {
-  min-height: 94vh;
+  height: 94vh;
   width: 90vw;
   max-width: 350px;
   background: white;
